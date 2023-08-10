@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto'sans-serif;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    min-height: 100vh;
+    background:#dfdfdf;
+    padding: 50px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background:#fff;
+    padding: 50px;
+}
+
+footer .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid: gap 20px;
+}
+
+footer .container .sobre h2{ 
+position:relative;
+color: #333;
+font-weight: 600;
+margin-bottom: 15px;
+}
+
+footer .container .sobre p{
+    color: #555;
+    font-size: 15px;
+}
+
+footer .container .ico{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+footer .container .ico li{
+    list-style: none;
+}
+
+footer .container .ico li a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .container .ico li a i{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .container .col-links h2{
+    margin-bottom: 10px;
+}
+
+footer .container .col-links{
+    position: relative;
+}
+
+footer .container .col-links ul li{
+    list-style: none;
+}
+
+footer .container .col-links ul li a{
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .container .Info .fale{
+    position: relative;
+}
+
+footer .container .Info .fale li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 15px;
+}
+
+footer .container .Info .fale li span{
+    color: #555;
+    font-size: 20px;
+}
+
+footer .container .Info .fale li a{
+    color: #555;
+    text-decoration: none;
+}
+footer .container .Info h2{
+    margin-bottom:  10px;
+}
+
+.copyrightText{
+width: 100%;
+background: #fff;
+padding: 10px 100px 30px;
+text-align: center;
+color: #555;
+border: 1px solid rgba(0, 0, 0,0.15);
+}
+
+@media (max-width: 991px){
+    footer{
+        padding: 40px;
+    }
+    footer .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid: gap 20px;
+
+    }
+    .copyrightText{
+        padding: 20px 40px 30px;
+
+    }
+
+    }
+    @media(max-width: 768px){
+        footer .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid: gap 20px;
+    
+    }
+}
+
